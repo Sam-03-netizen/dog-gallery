@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(3, 1fr);
+      width: 1000px;
+      margin: auto;
+    }
+
+    .box {
+
+      border-radius: 8px;
+      aspect-ratio: 1/1;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      display: grid;
+
+    }
+
+    .box:hover {
+      border: 2px solid black;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+
+    @media (max-width: 924px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 667px) {
+      .container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .box img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Dog Gallery</h1>
+  <div class="container">
+    <div class="box">
+      <img
+        src="https://img.freepik.com/free-photo/french-bulldog-dog-breeds-white-polka-dot-black-marble_1150-25345.jpg?semt=ais_hybrid&w=740&q=80">
+    </div>
+    <div class="box">
+      <img
+        src="https://media.istockphoto.com/id/636475496/photo/portrait-of-brown-puppy-with-bokeh-background.jpg?s=612x612&w=0&k=20&c=Ot63dQOYplm0kLJdlSVWbtKGwGkuZfnfdwH5ry9a6EQ=">
+    </div>
+    <div class="box">
+      <img src="https://cdn.pixabay.com/photo/2020/03/31/19/20/dog-4988985_1280.jpg">
+    </div>
+    <div class="box">
+      <img src="https://d2zp5xs5cp8zlg.cloudfront.net/image-59328-800.jpg">
+    </div>
+    <div class="box">
+      <img src="https://cdn.akc.org/content/article-body-image/pugsmalldogs.jpg">
+    </div>
+    <div class="box">
+      <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2025/06/04185131/Chow-Chow-.jpg">
+    </div>
+    <div class="box">
+      <img
+        src="https://www.cuteness.com/img/gallery/the-cutest-small-dog-breeds-in-the-world-ranked/intro-1730145867.jpg">
+    </div>
+    <div class="box">
+      <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2025/06/04180357/Australian-Shepherd.jpg">
+    </div>
+    <div class="box">
+      <img
+        src="https://www.marthastewart.com/thmb/96DOTYheFrPI0MWlo4lyYSdts8k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shiba-inu-dog-getty-0920-29b1225d30094ba3b4c3466751dfaf86.jpg">
+    </div>
+  </div>
+</body>
+
+</html>
